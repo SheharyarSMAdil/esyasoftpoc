@@ -1,0 +1,187 @@
+body {
+  background-color: #ddd;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", cursive;
+  width: 100vw;
+}
+header {
+  /* margin: 40px; */
+}
+.top-header h4 {
+  padding-top: 50px;
+  font-size: 3em;
+  font-family: "Comfortaa", cursive;
+  text-align: center;
+}
+section {
+  /* position: relative; */
+  /* display: flex; */
+  background: url("../img/water_BG.jpg") no-repeat;
+  background-size: cover;
+
+  background-attachment: fixed;
+  width: 100vw;
+  height: 110vh;
+}
+section .nst-card {
+  font-family: "Comfortaa", cursive;
+  position: relative;
+  overflow: hidden;
+  margin: 50px 0 0 50px;
+  padding: 20px;
+  background-color: #fff;
+
+  min-width: 380px;
+  min-height: 100px;
+	
+	width:400px;
+
+  
+  box-shadow: 0px 5px 20px -10px rgba(2, 2, 2, 0.25),
+    0px 8px 20px rgba(0, 0, 0, 0.22);
+  border-radius: 40px;
+}
+section .row .col-1
+{
+	padding:0;
+}
+section .nst-card .row .col-6 .header h4 {
+  font-size: 1.7em;
+  mix-blend-mode: overlay;
+  font-family: "Montserrat", sans-serif;
+  /* text-transform: uppercase; */
+}
+section .nst-card .row .col-6 .body {
+  /* display: flex; */
+}
+section .nst-card .row .col-6 .body h1 {
+  font-size: 3.5em;
+  padding: 10px 0;
+  font-family: "Comfortaa", cursive;
+  display: inline-block;
+}
+section .nst-card .row .col-6 .body h1 span {
+  display: inline-block;
+  font-size: 48px;
+}
+section .nst-card:hover {
+  transform: scale(1.2);
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+section .nst-card:hover .row .col-6 .body h1 {
+  /* transform: translateY(-10px); */
+
+  font-size: 4.7em;
+  transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+section .nst-card::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  bottom: -30px;
+  right: -30px;
+  background: url("../img/water_BG.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  filter: blur(30px) saturate(2);
+}
+section .nst-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -50%;
+  background-color: rgba(235, 235, 235, 0.22);
+}
+.percent {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  /* box-shadow: inset 0 0 20px #000; */
+  /* background-color: rgba(235, 235, 235, 0.22); */
+}
+.percent .number {
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 50%;
+}
+.percent .number i
+{
+
+	font-size:4em;
+	transform:translateX(10px);
+	mix-blend-mode: overlay;
+}
+.percent .number h2 {
+  color: #000;
+  font-weight: 700;
+  font-size: 40px;
+  transition: 0.4s;
+  mix-blend-mode: overlay;
+  transform: translate(5px, 10px);
+}
+svg {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  z-index: 100;
+}
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #eee;
+  stroke-width: 8;
+  stroke-linecap: round;
+  transform: translate(10px, 5px);
+  /* mix-blend-mode: soft-light; */
+}
+svg circle:nth-child(1) {
+  mix-blend-mode: soft-light;
+}
+svg circle:nth-child(2) {
+  stroke-width: 11;
+  stroke-dasharray: 0;
+  stroke-miterlimit: inherit;
+  stroke-dashoffset: 0;
+}
+.card-1:nth-child(1) svg circle:nth-child(2) {
+ /* stroke-dashoffset: calc(440 - (440 * 22.5) / 100); */
+   stroke: #33c481;
+}
+.card-2:nth-child(1) svg circle:nth-child(2) {
+/*  stroke-dashoffset: calc(440 - (440 * 34) / 100);  */
+  stroke: #cf5a17;
+}
+.card-3:nth-child(1) svg circle:nth-child(2) {
+  /* stroke-dashoffset: calc(440 - (440 * 12.9) / 100); */
+  stroke: #1c71d3;
+}
+.card-4:nth-child(1) svg circle:nth-child(2) {
+  /* stroke-dashoffset: calc(440 - (440 * 45.8) / 100); */
+  stroke: #c531e2;
+}
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  padding: 20px;
+  width: 100vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+}
+footer h5 {
+  font-family: "Comfortaa", sans-serif;
+}
